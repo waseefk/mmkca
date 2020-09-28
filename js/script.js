@@ -523,24 +523,24 @@ function validate(key) {
       , mobile = document.getElementById("mobile");
     return (8 == keycode || 46 == keycode || !(keycode < 48 || keycode > 57)) && mobile.value.length < 10
 }
-// $("#contact-form").submit(function(e) {
-//     e.preventDefault();
-//     var $form = $(this);
-//     $.post($form.attr("action"), $form.serialize()).then(function() {
-//         $("#contact-form").each(function() {
-//             this.reset()
-// 		});
-// 		alert("Thank you for contacting us. We will contact back you soon!");
-//     })
-// });
+$("#contact-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        $("#contact-form").each(function() {
+            this.reset()
+		});
+		alert("Thank you for contacting us. We will contact back you soon!");
+    })
+});
 
-// $("#newsletter-form").submit(function(e) {
-//     e.preventDefault();
-//     var $form = $(this);
-//     $.post($form.attr("action"), $form.serialize()).then(function() {
-//         $("#newsletter-form").each(function() {
-//             this.reset()
-// 		})		
-// 		alert("Thank you for Subscribing!");
-//     })
-// });
+$("#newsletter-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        $("#newsletter-form").each(function() {
+            this.reset()
+		})		
+		alert("Thank you for Subscribing!");
+    })
+});

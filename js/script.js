@@ -529,8 +529,8 @@ $("#contact-form").submit(function(e) {
     $.post($form.attr("action"), $form.serialize()).then(function() {
         $("#contact-form").each(function() {
             this.reset()
-        }),
-        setTimeout(window.location.reload(), window.location.href = location.pathname, 2e3)
+		});
+		alert("Thank you for contacting us. We will contact back you soon!");
     })
 });
 
@@ -540,7 +540,7 @@ $("#newsletter-form").submit(function(e) {
     $.post($form.attr("action"), $form.serialize()).then(function() {
         $("#newsletter-form").each(function() {
             this.reset()
-        }),
-        setTimeout(window.location.reload(), window.location.href = location.pathname, 2e3)
+		})		
+		alert("Thank you for Subscribing!");
     })
 });

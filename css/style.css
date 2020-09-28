@@ -4136,6 +4136,7 @@ img{
 
 .map-section{
 	position:relative;
+	height: 435px !important;
 }
 
 .map-data{

@@ -517,3 +517,30 @@
 	});	
 
 })(window.jQuery);
+
+function validate(key) {
+    var keycode = key.which ? key.which : key.keyCode
+      , mobile = document.getElementById("mobile");
+    return (8 == keycode || 46 == keycode || !(keycode < 48 || keycode > 57)) && mobile.value.length < 10
+}
+$("#contact-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        $("#contact-form").each(function() {
+            this.reset()
+        }),
+        setTimeout(window.location.reload(), window.location.href = location.pathname, 2e3)
+    })
+});
+
+$("#newsletter-form").submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        $("#newsletter-form").each(function() {
+            this.reset()
+        }),
+        setTimeout(window.location.reload(), window.location.href = location.pathname, 2e3)
+    })
+});

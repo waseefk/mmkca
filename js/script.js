@@ -523,11 +523,11 @@ function validate(key) {
       , mobile = document.getElementById("mobile");
     return (8 == keycode || 46 == keycode || !(keycode < 48 || keycode > 57)) && mobile.value.length < 10
 }
-$("#contact-form").submit(function(e) {
+$("#cont_form").submit(function(e) {
     e.preventDefault();
     var $form = $(this);
     $.post($form.attr("action"), $form.serialize()).then(function() {
-        $("#contact-form").each(function() {
+        $("#cont_form").each(function() {
             this.reset()
 		});
 		alert("Thank you for contacting us. We will contact back you soon!");

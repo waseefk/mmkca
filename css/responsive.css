@@ -883,11 +883,11 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:inline-block;
 		z-index:7;
-		border:1px solid #08ae8d;
+		border:1px solid #1d59bc;
 		float:none;
 		margin:0px 0px 0px 0px;
 		border-radius:2px;
-		background:#08ae8d;
+		background:#1d59bc;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
@@ -898,7 +898,7 @@
 		float:none !important;
 		margin:0px !important;
 		width:100% !important;
-		background:#08ae8d;
+		background:#1d59bc;
 		border:1px solid #ffffff;
 		border-top:none;
 	}
@@ -944,7 +944,7 @@
 		right:auto !important;
 		top:auto !important;
 		width:100%;
-		background:#08ae8d;
+		background:#1d59bc;
 		-webkit-border-radius:0px;
 		-ms-border-radius:0px;
 		-o-border-radius:0px;
@@ -961,7 +961,7 @@
 	.main-menu .navigation > li.has-mega-menu .mega-menu ul{
 		margin:0px;
 		width:100%;
-		background:#08ae8d;	
+		background:#1d59bc;	
 	}
 	
 	.main-menu .navigation > li.has-mega-menu .mega-menu .row,
@@ -1000,7 +1000,7 @@
 		padding:10px 10px !important;
 		line-height:22px;
 		color:#ffffff;
-		background:#08ae8d;
+		background:#1d59bc;
 		text-align:left;
 		min-height:0px;
 	}
@@ -1009,7 +1009,7 @@
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navbar-collapse > .navigation > li > a:focus,
 	.main-menu .navigation > li.has-mega-menu .mega-menu ul > li > a:hover{
-		background:#08ae8d;
+		background:#1d59bc;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:hover > a,
@@ -1020,7 +1020,7 @@
 	.main-menu .navigation > li.has-mega-menu .mega-menu ul > li:hover > a,
 	.main-menu .navigation > li.has-mega-menu .mega-menu ul > li.current > a,
 	.main-menu .navigation > li.has-mega-menu .mega-menu ul > li.current-menu-item > a{
-		background:#08ae8d;
+		background:#1d59bc;
 		color:#ffffff !important;
 	}
 	
